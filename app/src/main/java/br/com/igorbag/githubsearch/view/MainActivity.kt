@@ -1,4 +1,4 @@
-package br.com.igorbag.githubsearch.ui
+package br.com.igorbag.githubsearch.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
