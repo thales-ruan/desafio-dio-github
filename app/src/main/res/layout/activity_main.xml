@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/et_nome_usuario" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_lista_repositories"
+        android:id="@+id/recycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
