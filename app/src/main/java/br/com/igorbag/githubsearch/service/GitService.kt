@@ -8,6 +8,5 @@ import retrofit2.http.Path
 interface GitService {
 
     @GET("users/{user}/repos")
-  suspend  fun getAllRepositoriesByUser(@Path("user") user: String): Response<List<GitModel>>
-
+    suspend fun getAllRepositoriesByUser(@Path("user") user: String): Response<List<GitModel>>
 }
