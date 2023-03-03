@@ -8,23 +8,18 @@ import br.com.igorbag.githubsearch.model.GitModel
 
 import com.example.desafiodiogithub.repository.GitRepository
 import kotlinx.coroutines.launch
-import retrofit2.Response
 
-class MainViewModel (val gitRepository: GitRepository) : ViewModel() {
+
+class MainViewModel(val gitRepository: GitRepository) : ViewModel() {
 
     var listGit = MutableLiveData<List<GitModel>>()
-
-
 
     fun buscaGit(nome: String) {
         viewModelScope.launch {
             val response = gitRepository.getGit(nome)
-            if (response.isSuccessful){
+            if (response.isSuccessful) {
                 listGit.value = response.body()
             }
-
-
-
         }
     }
 
